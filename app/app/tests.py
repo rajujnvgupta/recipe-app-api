@@ -8,7 +8,6 @@ from django.test import SimpleTestCase
 from app import calc
 
 
-
 class CalcTests(SimpleTestCase):
     """ test the calc module. """
 
@@ -17,6 +16,7 @@ class CalcTests(SimpleTestCase):
 
         res = calc.add(5, 6)
         self.assertEqual(res, 11)
+
     def test_substract_number(self):
         """ test substracting number. """
         res = calc.substract(10, 15)
